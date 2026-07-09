@@ -1,0 +1,9 @@
+d1 $ every 2 (jux (fast 2 . rev)) $ s "jvbass" # gain 1 # n "<0 1 2>"
+
+d2 $ every 3 (# vowel "a e a o") $ n "0 1 2 3" # s "arpy"
+
+d3 $ s "gretsch bd bd" # resonance 0.8
+
+d4 $ every 2 (jux (fast 2 . rev)) $ s "jvbass!2 jvbass" # gain 1 # n "<0 1 2>"
+
+-- d2 $ s "moog*16" # n "<0 1 2>" # le2gato 1 # cutoff (range 200 2400 $ saw) # resonance 0.2
