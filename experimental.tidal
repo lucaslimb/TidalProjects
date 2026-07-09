@@ -1,0 +1,17 @@
+-- d1 $ fast 2 $ sound "bd(2,3) [hh sn hh]" # gain "1 0.7 0.5"
+
+d2 $
+  every 2 (jux (rev)) $
+  fast 3 $
+  every 2 (# vowel "o") $
+  sound "future cp bass:2"
+
+d3 $ every 2 (# vowel "a") $ sound "bass0 ~ bass0 ~" # gain 0.7
+
+mute 2
+
+unmute 2
+
+mute 3
+
+unmute 3
