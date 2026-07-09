@@ -1,9 +1,31 @@
+-- one
+
 d1 $ every 2 (jux (fast 2 . rev)) $ s "jvbass" # gain 1 # n "<0 1 2>"
 
 d2 $ every 3 (# vowel "a e a o") $ n "0 1 2 3" # s "arpy"
 
-d3 $ s "gretsch bd bd" # resonance 0.8
+d6 $ s "gretsch bd bd" # resonance 0.8
 
 d4 $ every 2 (jux (fast 2 . rev)) $ s "jvbass!2 jvbass" # gain 1 # n "<0 1 2>"
 
--- d2 $ s "moog*16" # n "<0 1 2>" # le2gato 1 # cutoff (range 200 2400 $ saw) # resonance 0.2
+-- two
+
+setcps 0.5
+
+-- d1 $ every 3 (# vowel "a e a o") $ n "0 1 2 3" # s "future"
+
+d4 $ fast 2 $ s "bd bd" # resonance 0.8 # gain 1.5
+
+d1 $ jux (rev . fast 2) $ s "jvbass!2 jvbass!3 jvbass" # gain 1
+
+d1 $ s "jvbass!2 jvbass!3 jvbass" # gain 1
+
+d3 $ s "bd bd bd [bd bd hh hh]"
+
+-- d1 $ every 3 (# vowel "o a e") $ s "sax lighter" # gain 0.7
+
+d5 $ every 6 (slow 4) $ s "pluck:2 pluck:1 pluck:3 ~ ~ ~ pluck" # vowel "o"
+
+d5 $ every 6 (slow 2) $ s "jvbass:2 jvbass:1 ~ ~ ~ jvbass" # vowel "e"
+
+d2 $ s "moog*16" # n "<0 1 2>" # legato 1 # cutoff (range 200 2400 $ saw) # resonance 0.2
